@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ainovaq"
+version = "1.0.0"
+description = "Python SDK for Ainovaq, the AI venture studio: services, blog articles, search and contact details."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.8"
+authors = [{ name = "Ainovaq Solutions LLC", email = "info@ainovaq.com" }]
+keywords = ["ainovaq", "venture studio", "sdk", "api", "mcp", "startups"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://ainovaq.com/"
+Documentation = "https://ainovaq.com/developers/"
+Repository = "https://github.com/webdeveloperainovaq/ainovaq"
+Issues = "https://github.com/webdeveloperainovaq/ainovaq/issues"
+
+[project.scripts]
+ainovaq = "ainovaq.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/ainovaq"]

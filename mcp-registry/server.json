@@ -1,0 +1,44 @@
+{
+  "$schema" : "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "description" : "Ainovaq AI venture studio: list services, get service details, search the blog, contact info.",
+  "icons" : [
+    {
+      "mimeType" : "image/png",
+      "sizes" : [
+        "160x160"
+      ],
+      "src" : "https://ainovaq.com/wp-content/themes/ainovaq-theme/assets/images/favicon.png"
+    }
+  ],
+  "name" : "com.ainovaq/mcp",
+  "packages" : [
+    {
+      "identifier" : "ainovaq",
+      "packageArguments" : [
+        {
+          "type" : "positional",
+          "value" : "mcp-server"
+        }
+      ],
+      "registryType" : "npm",
+      "runtimeHint" : "npx",
+      "transport" : {
+        "type" : "stdio"
+      },
+      "version" : "1.2.0"
+    }
+  ],
+  "remotes" : [
+    {
+      "type" : "streamable-http",
+      "url" : "https://ainovaq.com/mcp"
+    }
+  ],
+  "repository" : {
+    "source" : "github",
+    "url" : "https://github.com/webdeveloperainovaq/ainovaq"
+  },
+  "title" : "Ainovaq",
+  "version" : "1.2.0",
+  "websiteUrl" : "https://ainovaq.com/developers/"
+}
