@@ -1,0 +1,46 @@
+{
+  "name": "ainovaq",
+  "version": "1.2.0",
+  "description": "Ainovaq SDK and command-line tool: services, blog search, contact details and MCP setup for Ainovaq, the AI venture studio.",
+  "mcpName": "com.ainovaq/mcp",
+  "keywords": [
+    "ainovaq",
+    "venture studio",
+    "cli",
+    "mcp",
+    "startups",
+    "go-to-market",
+    "mvp",
+    "sdk",
+    "api",
+    "client",
+    "mcp-server",
+    "model-context-protocol"
+  ],
+  "homepage": "https://ainovaq.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webdeveloperainovaq/ainovaq.git",
+    "directory": "cli"
+  },
+  "bugs": {
+    "url": "https://github.com/webdeveloperainovaq/ainovaq/issues",
+    "email": "info@ainovaq.com"
+  },
+  "license": "MIT",
+  "author": "Ainovaq Solutions LLC <info@ainovaq.com> (https://ainovaq.com)",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "ainovaq": "bin/ainovaq.js"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
